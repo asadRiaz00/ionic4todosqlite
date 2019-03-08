@@ -4,6 +4,8 @@ import { Routes, RouterModule } from '@angular/router';
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', loadChildren: './home/home.module#HomePageModule' },
+  { path: 'add-data', loadChildren: './add-data/add-data.module#AddDataPageModule' },
+  { path: 'edit-data', loadChildren: './edit-data/edit-data.module#EditDataPageModule' },
 ];
 
 @NgModule({
